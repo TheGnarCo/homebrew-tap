@@ -3,10 +3,10 @@ cask "gnar-term" do
 
   if Hardware::CPU.arm?
     url "https://github.com/TheGnarCo/gnar-term/releases/download/v#{version}/GnarTerm_#{version}_aarch64.dmg"
-    sha256 "324a18cfd1e3f7b9195e8c2aa4bdff014c3ca3357fced2e956712d72f9c31d1a"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   else
     url "https://github.com/TheGnarCo/gnar-term/releases/download/v#{version}/GnarTerm_#{version}_x64.dmg"
-    sha256 "c22d170295fe00742732891e44350462951d2eba5e1c3601d21b23c768b62fe2"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
 
   name "GnarTerm"
