@@ -1,12 +1,12 @@
 cask "gnar-term" do
-  version "0.3.2"
+  version "0.3.3"
 
   if Hardware::CPU.arm?
     url "https://github.com/TheGnarCo/gnar-term/releases/download/v#{version}/GnarTerm_#{version}_aarch64.dmg"
-    sha256 "0b3180e3ca13562d9263ffb0e9140eac90bb05c2c8c50e0791321b0aa2964085"
+    sha256 "70c863e2a06f30db9b675602cef35bbc6c1b464207f662657d6ccb5661f3af12"
   else
     url "https://github.com/TheGnarCo/gnar-term/releases/download/v#{version}/GnarTerm_#{version}_x64.dmg"
-    sha256 "d35229d42e110d5ab4d7863512b45991d502583cb0a261992fdf609f6335c56c"
+    sha256 "6f74f0cdd5746ed65579e895720af371a4165dcb08f34e495e5edafb02a479aa"
   end
 
   name "GnarTerm"
@@ -14,6 +14,7 @@ cask "gnar-term" do
   homepage "https://github.com/TheGnarCo/gnar-term"
 
   app "GnarTerm.app"
+  binary "#{appdir}/GnarTerm.app/Contents/MacOS/gnar-term"
 
   zap trash: [
     "~/Library/Caches/com.thegnar.gnar-term",
